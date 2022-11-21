@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57da366b36.js" crossorigin="anonymous"></script>
     <title>Portofolio</title>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <h1 style="font-size: 100;">Jelang</h1>  
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -31,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/bangkong.jpeg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -80,6 +81,69 @@
     </div>
 </div>
 
+<!-- ----------------services---------------------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Mobile Dev</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit laboriosam tempora quibusdam in at beatae quod eos .</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Desktop Dev</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit laboriosam tempora quibusdam in at beatae quod eos 
+                    temporibus harum doloribus, expedita quas neque. Quidem,.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programming</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------portofolio------------------ -->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Sosial Media App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias pariatur saepe perferendis amet vero numquam.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias pariatur saepe perferendis amet vero numquam.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online ShoppApp</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias pariatur saepe perferendis amet vero numquam.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -92,6 +156,8 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
 </script>
